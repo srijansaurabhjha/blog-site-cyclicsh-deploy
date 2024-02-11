@@ -1,0 +1,81 @@
+.home_main_container{
+    height:calc(100vh - 6vh - 12vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Number of lines you want to display */
+    -webkit-box-orient: vertical;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    padding-right:0.5rem;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.blogTitle{
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    color: #0F0F0F;
+    font-weight: bolder;
+}
+
+.blogAuthor{
+    justify-self: center;
+    margin-right: 1.5rem;
+    font-size: 1rem;
+}
+
+@media screen and (max-width:850px){
+    .upper_part{
+        flex-direction: column;
+    }
+    .avatar_part{
+        margin-right: 2rem;
+    }
+    .blogTitle{
+        margin-bottom: 0.5rem;
+    }
+    .desc{
+        -webkit-line-clamp: 1; /* Number of lines you want to display */
+    }
+}
+
+@media screen and (max-width:550px){
+    .blogTitle{
+        font-size: 1.1rem;
+    }
+    .blogAuthor{
+        font-size: 0.9rem;
+    }
+    .desc{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width:500px){
+    .blogTitle{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1; /* Number of lines you want to display */
+        -webkit-box-orient: vertical;
+    }
+}
+  
+
+@media screen and (max-width:400px){
+    .blogAuthor{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1; /* Number of lines you want to display */
+        -webkit-box-orient: vertical;
+    }
+}

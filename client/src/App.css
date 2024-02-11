@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.main_body{
+    background-image: url('background_img.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode: lighten;
+    background-attachment: fixed;
+}
+
+.main_content{
+    min-height: calc(100vh - 6vh - 12vh);
+}
+
+@media screen and (max-width:450px){
+    .main_content{
+        padding-top: 2rem;
+    }
+}
