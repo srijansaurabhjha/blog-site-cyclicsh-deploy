@@ -48,7 +48,7 @@ const addBlog=async(req,res)=>{
 
 const getAllBlog=async(req,res)=>{
     try{
-        const q=req.query.q;
+        const q=req.query.q.toLowerCase();
         const Blogs=await Blog.find().populate('author','name');
         Blogs.reverse();
         const searchedBlogs=Blogs.filter((b)=>{
